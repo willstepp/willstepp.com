@@ -1,0 +1,36 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import FormattedDate from "@components/FormattedDate.astro";
+import { readingTime } from "@lib/utils";
+import BackToPrev from "@components/BackToPrev.astro";
+import Link from "@components/Link.astro";
+
+export async function getStaticPaths() {
+  const books = (await getCollection("books"))
+    .filter(post => !post.data.draft)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  return books.map((project) => ({
+    params: { slug: project.slug },
+    props: project,
+  }));
+}
+type Props = CollectionEntry<"books">;
+
+const project = Astro.props;
+const { Content } = await project.render();
+---
+
+<PageLayout title={project.data.title} description={project.data.description}>
+  <Container>
+    <div class="space-y-1 my-10">
+      <div class="text-2xl font-semibold text-black dark:text-white">
+        {project.data.title}
+      </div>
+    </div>
+    <article>
+      <Content />
+    </article>
+  </Container>
+</PageLayout>
