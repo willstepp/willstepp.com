@@ -7,6 +7,7 @@ const books = defineCollection({
     date: z.coerce.date(),
     draft: z.boolean().optional(),
     description: z.string(),
+    thumbnail: z.string(),
   }),
 });
 

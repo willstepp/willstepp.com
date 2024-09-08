@@ -8,7 +8,6 @@ import inter400 from "@fontsource/inter/files/inter-latin-400-normal.woff2";
 import inter600 from "@fontsource/inter/files/inter-latin-600-normal.woff2";
 import lora400 from "@fontsource/lora/files/lora-latin-400-normal.woff2";
 import lora600 from "@fontsource/lora/files/lora-latin-600-normal.woff2";
-import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -61,8 +60,6 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<ViewTransitions  />
 
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client";
@@ -186,3 +183,15 @@ const { title, description, image = "/nano.png" } = Astro.props;
   document.addEventListener("astro:after-swap", () => init());
   preloadTheme();
 </script>
+
+<!-- MailerLite Universal -->
+<script>
+  // @ts-nocheck
+  console.log("MailerLite Universal");
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1094685');
+</script>
+<!-- End MailerLite Universal -->
