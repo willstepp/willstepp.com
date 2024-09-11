@@ -1,6 +1,6 @@
 ---
 title: "1986 - Stories"
-description: "Fall 2024"
+description: "softcover / ebook"
 date: "Mar 18 2024"
 thumbnail: "/images/1986-cover.jpg"
 ---

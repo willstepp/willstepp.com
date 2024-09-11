@@ -18,8 +18,8 @@ const { entry } = Astro.props;
       <div class="font-semibold">
         {entry.data.title}
       </div>
-      <div class="text-sm">
-        <em>{entry.data.description}</em>
+      <div class="text-sm" style="opacity: 0.75">
+        {entry.data.description}
       </div>
     </div>
   </div>
