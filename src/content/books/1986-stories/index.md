@@ -10,6 +10,12 @@ A collection of ten interconnected stories about a boy growing up in a small tow
 #### [“An absolutely haunting and emotionally charged reading experience.”](https://www.kirkusreviews.com/book-reviews/will-stepp/1986-stories/)
 #### *—Kirkus Reviews*
 
+<br />
+
+#### [Preorder at Amazon](https://www.amazon.com/1986-Stories-Will-Stepp/dp/B0DJGBL22Y)
+
+#### [ARC Readers Needed](https://booksprout.co/reviewer/review-copy/view/185278/1986-stories)
+
 <br/>
 
 ![1986 - Book Cover](../../../images/1986-cover.jpg)
